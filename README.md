@@ -77,7 +77,23 @@ Adder.addFive(3) # This'll return 8!
 
 I learned a lot! Thank goodness for a little bit of failure.
 
-**Iteration 2**: This second iteration works! Instead of trying to define a function with clauses that require different arity, I leveraged pattern matching and instead passed in a list of maps. While writing the second function I also found out that order of clauses matter in terms of specifcity. The most specific pattern clause (In my case, the one that matches both age and name) should go first and less specific clauses should follow (one that matches only for name). Otherwise, it's possible that other clauses will never be matched. Elixir will match the first pattern it can. 
+**Iteration 2**: This second iteration works! Instead of trying to define a function with clauses that require different arity, I leveraged pattern matching and instead passed in a list of maps. While writing the second function I also found out that order of clauses matter in terms of specifcity. The most specific pattern clause (In my case, the one that matches both age and name) should go first and less specific clauses should follow (one that matches only for name). Otherwise, it's possible that other clauses will never be matched. Elixir will match the first pattern it can.
+
+## Chapter 7 Exercises
+
+No exercises
+
+## Chapter 8 Exercises
+
+This chapter focused a lot on IO, strings, and immutability. It listed a few of the functions in the `String` module:
+
+- `upcase/1`: Uppercases the passed in string
+- `downcase/1`: Lowercases the passed in string
+- `reverse/1`: Reverses the passed in string
+- `split/1`: Splits the string along whitespace into a list
+- `replace/3`: Replaces part of a string; takes a string, the characters to change, and what to change the characters into.
+
+The exercise was _make a program that generates a short story. Use IO.gets to get 3 inputs, and output them as a story_.
 
 [joe]: https://joyofelixir.com
 [fnversusdef]: https://stackoverflow.com/a/18023790/7937453
